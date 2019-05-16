@@ -20,6 +20,7 @@ pipeline {
       steps {
         input(message: 'proceed to 201?', id: 'stage_201')
         sh 'echo continuing stage 201'
+        sh 'echo and continue again'
       }
     }
   }
