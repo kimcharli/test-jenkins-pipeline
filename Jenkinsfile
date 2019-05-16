@@ -6,6 +6,7 @@ pipeline {
         stage('stage 101') {
           steps {
             echo 'message from stage 101'
+            input(message: 'are you ok to proceed?', id: 'stage_101')
           }
         }
         stage('stage 102') {
